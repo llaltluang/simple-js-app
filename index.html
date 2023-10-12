@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple-Js-App</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-</head>
+  </head>
   <body>
-    <ul class="pokemon-list"></ul>
-    <script src="./js/promise-polyfill.js"></script>
-    <script src="./js/fetch-polyfill.js"></script>
-    <script src="./js/scripts.js"></script>
+    <header>
+       <a href="index.html"><img src="pokedex.png" alt=""></a>
+    </header>
+    <div class="search-wrap">
+       <img src="./assets/search.svg" alt="search icon" class="search-icon" />
+ 
+       <input type="text" id="search" class="search" placeholder="Search ">
+ 
+       <img src="./assets/cross.svg" alt="cross icon" class="search-close-icon" id="search-close-icon"/>
+    </div>
+ 
+     <ul class="pokemon-list" style="list-style-type: none;" > </ul>
+     <div style="list-style-type: none;" class="modal-container"> </div>
+     <div id="modal-container"> </div>
+     <script src="./js/promise-polyfill.js"></script>
+     <script src="./js/fetch-polyfill.js"></script>
+     <script src="./js/scripts.js"></script>
   </body>
 </html>
