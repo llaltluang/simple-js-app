@@ -8,18 +8,19 @@
   </head>
   <body>
     <header>
-       <a href="index.html"><img src="pokedex.png" alt=""></a>
+       <a href="index.html"><img src="/img/pokedex.png" alt="pokedex"></a>
     </header>
     <div class="search-wrap">
-       <img src="./assets/search.svg" alt="search icon" class="search-icon" />
+       <img src="img/search.svg" alt="search icon" class="search-icon" />
  
        <input type="text" id="search" class="search" placeholder="Search ">
  
-       <img src="./assets/cross.svg" alt="cross icon" class="search-close-icon" id="search-close-icon"/>
+       <img src="img/cross.svg" alt="cross icon" class="search-close-icon" id="search-close-icon"/>
     </div>
- 
+  <main>
      <ul class="pokemon-list" style="list-style-type: none;" > </ul>
      <div style="list-style-type: none;" class="modal-container"> </div>
+  </main>
      <div id="modal-container"> </div>
      <script src="./js/promise-polyfill.js"></script>
      <script src="./js/fetch-polyfill.js"></script>
